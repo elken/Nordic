@@ -1,9 +1,8 @@
-
+@import '../gtk-3.0/nord';
 
 $variant: 'dark';
-$accent: 'green';
+$accent: $nord15;
 
-@import '../gtk-3.0/nord';
 @import '../gtk-3.0/colors';
 @import '../gtk-3.0/elementary-colors';
 @import '../gtk-3.0/colors-public';

@@ -5,7 +5,7 @@ import sys
 import xml.sax
 import subprocess
 
-INKSCAPE = '/usr/bin/inkscape'
+INKSCAPE = '/usr/bin/flatpak'
 OPTIPNG = '/usr/bin/optipng'
 MAINDIR = '../'
 SRC = os.path.join('.', 'gtk3')
@@ -37,7 +37,7 @@ def wait_for_prompt(process, command=None):
 
 def start_inkscape():
     process = subprocess.Popen(
-        [INKSCAPE, '--shell'], bufsize=0,
+        [INKSCAPE, 'run', 'org.inkscape.Inkscape', '--shell'],
         stdin=subprocess.PIPE, stdout=subprocess.PIPE
     )
     wait_for_prompt(process)
