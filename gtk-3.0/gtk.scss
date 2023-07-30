@@ -1,9 +1,8 @@
-
+@import 'nord';
 
 $variant: 'dark';
-$accent: 'green';
+$accent: $nord15;
 
-@import 'nord';
 @import 'colors';
 @import 'elementary-colors';
 @import 'colors-public';
